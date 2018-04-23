@@ -1,2 +1,2 @@
-# Miniature-Cacalculation
+# Miniature-Calculation
 A miniature program
