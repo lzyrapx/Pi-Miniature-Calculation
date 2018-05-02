@@ -108,8 +108,8 @@ void Pi(int digits)
 	double time1 = time_clock();
 	cout << "Total Time = " << time1 - time0 << "s" << '\n' << '\n';
 
-	//output_to_file("pi.txt", P.to_string(digits));
-	cout << P.to_string(digits) << endl;
+	output_to_file("pi.txt", P.to_string(digits));
+	//cout << P.to_string(digits) << endl;
 }
 int main(int argc, char const *argv[])
 {
