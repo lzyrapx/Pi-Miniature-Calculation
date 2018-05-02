@@ -17,7 +17,7 @@
 ### 4. Program implements
 - **[Fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform)**
 - **[Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method)**
-- **[Binary_splitting](https://en.wikipedia.org/wiki/Binary_splitting)**
+- **[Binary_splitting method](https://en.wikipedia.org/wiki/Binary_splitting)**
 
 ### 5. Editorial:
 - **[FFT based multiplication of large numbers](http://numbers.computation.free.fr/Constants/Algorithms/fft.html)**
