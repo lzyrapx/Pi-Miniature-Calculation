@@ -13,6 +13,7 @@
 - **N = 10000, Time elapsed = 2.599s**
 - **N = 100000, Time elapsed = 40.793s**
 - **N = 1000000, Time elapsed = 700.538s**
+- **...**
 
 ### 4. Program implements
 - **[Fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform)**
