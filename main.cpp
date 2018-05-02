@@ -106,7 +106,7 @@ void Pi(int digits)
 	P = P.mul(Q, p);
 
 	double time1 = time_clock();
-	cout << "Total Time = " << time1 - time0 << "s" << '\n' << '\n';
+	cout << "Time elapsed = " << time1 - time0 << "s" << '\n' << '\n';
 
 	output_to_file("pi.txt", P.to_string(digits));
 	//cout << P.to_string(digits) << endl;
