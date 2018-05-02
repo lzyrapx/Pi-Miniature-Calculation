@@ -1,12 +1,12 @@
-#if defined(_MSC_VER) && (_MSC_VER <= 1600) // _MSC_VERÊÇÎ¢ÈíµÄÔ¤±àÒë¿ØÖÆ,Ö¸µÄÊÇMicrosoftµÄC±àÒëÆ÷µÄ°æ±¾
+#if defined(_MSC_VER) && (_MSC_VER <= 1600) // _MSC_VERæ˜¯å¾®è½¯çš„é¢„ç¼–è¯‘æ§åˆ¶,æŒ‡çš„æ˜¯Microsoftçš„Cç¼–è¯‘å™¨çš„ç‰ˆæœ¬
 // do something
 #endif
 
 #ifdef _MSC_VER
-#pragma warning(disable:4996)   // Ïû³ı_CRT_SECURE_NO_DEPRECATE¾¯¸æ
+#pragma warning(disable:4996)   // æ¶ˆé™¤_CRT_SECURE_NO_DEPRECATEè­¦å‘Š
 #endif
 
-#include <chrono> // ±ê×¼Ä£°å¿âÖĞÓëÊ±¼äÓĞ¹ØµÄÍ·ÎÄ¼ş
+#include <chrono> // æ ‡å‡†æ¨¡æ¿åº“ä¸­ä¸æ—¶é—´æœ‰å…³çš„å¤´æ–‡ä»¶
 #include <iostream>
 #include <string.h>
 #include <stdint.h>
@@ -16,7 +16,7 @@
 
 using namespace std;
 
-void output_to_file(const char *path, const std::string &str) // ÏòÎÄ¼şÊä³östring
+void output_to_file(const char *path, const std::string &str) // å‘æ–‡ä»¶è¾“å‡ºstring
 {
 
 	FILE *file = fopen(path, "wb");
@@ -38,7 +38,7 @@ double time_clock() // running time
 }
 
 // Binary Splitting recursion for the Chudnovsky Formula.
-void calc(BigFloat &P, BigFloat &Q, BigFloat &R, uint32_t a, uint32_t b, size_t p) // p ÊÇ¾«¶È
+void calc(BigFloat &P, BigFloat &Q, BigFloat &R, uint32_t a, uint32_t b, size_t p) // p æ˜¯ç²¾åº¦
 {	
 	// https://en.wikipedia.org/wiki/Chudnovsky_algorithm
 
@@ -76,7 +76,7 @@ void calc(BigFloat &P, BigFloat &Q, BigFloat &R, uint32_t a, uint32_t b, size_t 
 }
 void Pi(int digits)
 {
-	//µÚÒ»¸ö 3 ²»¼ÆËã
+	//ç¬¬ä¸€ä¸ª 3 ä¸è®¡ç®—
 	digits++;
 	int  p = (digits + 8) / 9;
 	int terms = (int)(p * 0.6346230241342037371474889163921741077188431452678) + 1;
@@ -99,7 +99,7 @@ void Pi(int digits)
 	Q = Q.mul(4270934400);
 	P = Q.div(P, p);
 
-	// Å£¶Ùµü´ú¼ÆËã¿ªÆ½·½µÄµ¹Êı
+	// ç‰›é¡¿è¿­ä»£è®¡ç®—å¼€å¹³æ–¹çš„å€’æ•°
 	Q = invsqrt(10005, p);
 
 	cout << "Final Multiply... " << '\n';
@@ -114,11 +114,11 @@ void Pi(int digits)
 int main(int argc, char const *argv[])
 {
 	int digits = 100; // N digits of Pi.
-	BigFloat a = 1.12312312412331241;
-	BigFloat b = 1.21312312423432;
-	BigFloat multi = a.add(b);
-	cout << multi.to_string(1000);
-	//Pi(digits);
+	//BigFloat a = 1.12312312412331241;
+	//BigFloat b = 1.21312312423432;
+	//BigFloat multi = a.add(b);
+	//cout << multi.to_string(1000);
+	Pi(digits);
 	system("pause");
 	return 0;
 }
