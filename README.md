@@ -1,4 +1,4 @@
-# Miniature-Calculation
+# Pi-Miniature-Calculation
 ### Main algorithm ：[Chudnovsky algorithm](https://en.wikipedia.org/wiki/Chudnovsky_algorithm)
 
 ### Description
