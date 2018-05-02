@@ -1,5 +1,6 @@
 # Pi-Miniature-Calculation
-### 1. Main algorithm ：[Chudnovsky algorithm](https://en.wikipedia.org/wiki/Chudnovsky_algorithm)
+### 1. Main algorithm ：
+### - [Chudnovsky algorithm](https://en.wikipedia.org/wiki/Chudnovsky_algorithm)
 
 ### 2. Description
 - **The Chudnovsky algorithm is a fast method for calculating the digits of π.** 
