@@ -76,6 +76,7 @@ void calc(BigFloat &P, BigFloat &Q, BigFloat &R, uint32_t a, uint32_t b, size_t 
 }
 void Pi(int digits)
 {
+	cout << "digit=" << digits << endl;
 	//第一个 3 不计算
 	digits++;
 	int  p = (digits + 8) / 9;
